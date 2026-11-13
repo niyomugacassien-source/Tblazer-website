@@ -1,0 +1,212 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2511
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww28600\viewh18000\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+  <meta charset="UTF-8" />\
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />\
+  <title>TBlazer Champs Ltd | Heritage Roots. Modern Trails. One Digital Arena.</title>\
+  <meta name="description" content="TBlazer Champs Ltd is East Africa's asset-light sports-tourism and cultural heritage telemetry platform across Rwanda, Uganda, Tanzania, and Kenya." />\
+  <style>\
+    :root \{\
+      --bg-dark: #07111a;\
+      --bg-card: #0f1e2e;\
+      --bg-card-hover: #15283d;\
+      --emerald: #10b981;\
+      --emerald-glow: rgba(16, 185, 129, 0.2);\
+      --gold: #f59e0b;\
+      --sky: #38bdf8;\
+      --text-main: #f8fafc;\
+      --text-muted: #94a3b8;\
+      --border: #1e3348;\
+    \}\
+\
+    * \{ box-sizing: border-box; margin: 0; padding: 0; \}\
+    body \{\
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;\
+      background-color: var(--bg-dark);\
+      color: var(--text-main);\
+      line-height: 1.6;\
+      scroll-behavior: smooth;\
+    \}\
+\
+    /* Navigation */\
+    header \{\
+      position: sticky; top: 0; z-index: 100;\
+      background: rgba(7, 17, 26, 0.92);\
+      backdrop-filter: blur(12px);\
+      border-bottom: 1px solid var(--border);\
+      padding: 16px 6%;\
+      display: flex; justify-content: space-between; align-items: center;\
+    \}\
+    .brand \{ display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--text-main); \}\
+    .brand-icon \{\
+      width: 40px; height: 40px; border-radius: 10px;\
+      background: linear-gradient(135deg, var(--emerald), #047857);\
+      display: grid; place-items: center; font-weight: 800; font-size: 20px; color: #fff;\
+      box-shadow: 0 0 18px var(--emerald-glow);\
+    \}\
+    .brand-text h1 \{ font-size: 18px; letter-spacing: 0.03em; \}\
+    .brand-text span \{ font-size: 11px; color: var(--emerald); text-transform: uppercase; letter-spacing: 0.08em; display: block; \}\
+\
+    nav \{ display: flex; gap: 24px; align-items: center; \}\
+    nav a \{ color: var(--text-muted); text-decoration: none; font-size: 14px; font-weight: 500; transition: color 0.2s; \}\
+    nav a:hover \{ color: var(--text-main); \}\
+    .btn-primary \{\
+      background: var(--emerald); color: #042f2e; font-weight: 700;\
+      padding: 10px 20px; border-radius: 8px; text-decoration: none; font-size: 14px;\
+      transition: transform 0.2s, box-shadow 0.2s; border: none; cursor: pointer;\
+    \}\
+    .btn-primary:hover \{ transform: translateY(-2px); box-shadow: 0 6px 20px var(--emerald-glow); \}\
+    .btn-outline \{\
+      background: transparent; color: var(--text-main); border: 1px solid var(--border);\
+      padding: 10px 20px; border-radius: 8px; text-decoration: none; font-size: 14px; font-weight: 600;\
+      transition: border-color 0.2s;\
+    \}\
+    .btn-outline:hover \{ border-color: var(--emerald); \}\
+\
+    /* Hero Section */\
+    .hero \{\
+      padding: 90px 6% 70px;\
+      background: radial-gradient(circle at 80% 20%, rgba(16, 185, 129, 0.14), transparent 50%),\
+                  radial-gradient(circle at 15% 80%, rgba(245, 158, 11, 0.08), transparent 45%);\
+      border-bottom: 1px solid var(--border);\
+    \}\
+    .hero-grid \{ max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 48px; align-items: center; \}\
+    .pill \{\
+      display: inline-block; background: rgba(16, 185, 129, 0.12); color: var(--emerald);\
+      border: 1px solid rgba(16, 185, 129, 0.3); padding: 6px 14px; border-radius: 999px;\
+      font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 18px;\
+    \}\
+    .hero h2 \{ font-size: clamp(32px, 4.5vw, 52px); line-height: 1.15; margin-bottom: 20px; \}\
+    .hero h2 span \{ color: var(--emerald); \}\
+    .hero p \{ font-size: 17px; color: var(--text-muted); margin-bottom: 30px; max-width: 600px; \}\
+    .hero-actions \{ display: flex; gap: 14px; flex-wrap: wrap; \}\
+\
+    /* Live Telemetry Card in Hero */\
+    .telemetry-box \{\
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px;\
+      padding: 24px; box-shadow: 0 20px 40px rgba(0,0,0,0.4);\
+    \}\
+    .telemetry-header \{ display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; border-bottom: 1px solid var(--border); padding-bottom: 12px; \}\
+    .live-dot \{ display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; color: var(--emerald); \}\
+    .live-dot::before \{ content: ""; width: 8px; height: 8px; border-radius: 50%; background: var(--emerald); box-shadow: 0 0 8px var(--emerald); \}\
+    .stat-row \{ display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 14px; \}\
+    .mini-stat \{ background: rgba(7, 17, 26, 0.6); padding: 14px; border-radius: 10px; border: 1px solid var(--border); \}\
+    .mini-stat small \{ color: var(--text-muted); font-size: 11px; text-transform: uppercase; display: block; \}\
+    .mini-stat strong \{ font-size: 20px; color: var(--sky); \}\
+    .mini-stat strong.gold \{ color: var(--gold); \}\
+\
+    /* Sections */\
+    section \{ padding: 75px 6%; max-width: 1280px; margin: 0 auto; \}\
+    .section-head \{ text-align: center; max-width: 720px; margin: 0 auto 48px; \}\
+    .section-head h3 \{ font-size: 32px; margin-bottom: 12px; \}\
+    .section-head p \{ color: var(--text-muted); font-size: 16px; \}\
+\
+    /* Pillars Grid */\
+    .grid-3 \{ display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 24px; \}\
+    .card \{\
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: 14px;\
+      padding: 28px; transition: transform 0.2s, border-color 0.2s;\
+    \}\
+    .card:hover \{ transform: translateY(-4px); border-color: var(--emerald); \}\
+    .card-tag \{ font-size: 11px; font-weight: 700; color: var(--gold); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px; display: block; \}\
+    .card h4 \{ font-size: 20px; margin-bottom: 10px; \}\
+    .card p \{ color: var(--text-muted); font-size: 14px; \}\
+\
+    /* 4-Season Interactive Tabs */\
+    .tabs \{ display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin-bottom: 32px; \}\
+    .tab-btn \{\
+      background: var(--bg-card); color: var(--text-muted); border: 1px solid var(--border);\
+      padding: 10px 20px; border-radius: 999px; font-size: 14px; font-weight: 600; cursor: pointer;\
+      transition: all 0.2s;\
+    \}\
+    .tab-btn.active \{ background: var(--emerald); color: #042f2e; border-color: var(--emerald); \}\
+    .season-panel \{\
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px;\
+      padding: 32px; display: none;\
+    \}\
+    .season-panel.active \{ display: grid; grid-template-columns: 1.3fr 0.7fr; gap: 32px; align-items: center; \}\
+    .season-panel h4 \{ font-size: 24px; color: var(--emerald); margin-bottom: 12px; \}\
+    .season-list \{ list-style: none; margin-top: 16px; \}\
+    .season-list li \{ padding: 8px 0; border-bottom: 1px solid var(--border); font-size: 14px; color: var(--text-main); \}\
+    .season-list li span \{ color: var(--gold); font-weight: 700; margin-right: 8px; \}\
+\
+    /* EAC Table */\
+    .table-wrap \{ overflow-x: auto; background: var(--bg-card); border: 1px solid var(--border); border-radius: 14px; \}\
+    table \{ width: 100%; border-collapse: collapse; font-size: 14px; \}\
+    th, td \{ padding: 16px 20px; text-align: left; border-bottom: 1px solid var(--border); \}\
+    th \{ background: rgba(7, 17, 26, 0.7); color: var(--emerald); font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; \}\
+\
+    /* Contact / Institutional Modal Banner */\
+    .cta-banner \{\
+      background: linear-gradient(135deg, #064e3b, #0f1e2e);\
+      border: 1px solid var(--emerald); border-radius: 18px; padding: 48px;\
+      text-align: center; margin: 40px 6% 80px; max-width: 1160px; margin-left: auto; margin-right: auto;\
+    \}\
+    .cta-banner h3 \{ font-size: 30px; margin-bottom: 12px; \}\
+    .cta-banner p \{ color: #d1fae5; max-width: 640px; margin: 0 auto 28px; \}\
+\
+    footer \{\
+      border-top: 1px solid var(--border); padding: 40px 6%;\
+      display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px;\
+      color: var(--text-muted); font-size: 13px;\
+    \}\
+\
+    @media (max-width: 860px) \{\
+      .hero-grid, .season-panel.active \{ grid-template-columns: 1fr; \}\
+      nav \{ display: none; \}\
+    \}\
+  </style>\
+</head>\
+<body>\
+\
+  <!-- Header -->\
+  <header>\
+    <a href="#" class="brand">\
+      <div class="brand-icon">T</div>\
+      <div class="brand-text">\
+        <h1>TBlazer Champs Ltd</h1>\
+        <span>Heritage Roots \'95 Modern Trails</span>\
+      </div>\
+    </a>\
+    <nav>\
+      <a href="#pillars">Core Pillars</a>\
+      <a href="#seasons">4-Season Calendar</a>\
+      <a href="#eac">EAC Footprint</a>\
+      <a href="#guardianship">Tree Guardianship</a>\
+      <a href="#partner" class="btn-primary">Partner With Us</a>\
+    </nav>\
+  </header>\
+\
+  <!-- Hero Section -->\
+  <div class="hero">\
+    <div class="hero-grid">\
+      <div>\
+        <span class="pill">ISIC 9319 Sports \'95 ISIC 7990 Eco-Tourism \'95 Kigali, Rwanda</span>\
+        <h2>Heritage Roots. <span>Modern Trails.</span> One Digital Arena.</h2>\
+        <p>\
+          TBlazer Champs Ltd is East Africa's asset-light sports-tourism and cultural preservation engine\'97connecting 416 Rwandan sectors, youth centers, and regional eco-trails through lightweight USSD, WebGL games, and transparent mobile telemetry.\
+        </p>\
+        <div class="hero-actions">\
+          <a href="#seasons" class="btn-primary">Explore 4-Season Calendar</a>\
+          <a href="#partner" class="btn-outline">Institutional & Ministry Portal</a>\
+        </div>\
+      </div>\
+\
+      <div class="telemetry-box">\
+        <div class="telemetry-header">\
+          <span class="live-dot">SOVEREIGN ENGINE ACTIVE</span>\
+          <span style="font-size:12px;color:var(--text-muted);">12-Byte USSD Telemetry</span>\
+        </div>\
+        <div class="stat-row">\
+          <div class="mini-stat">\
+            <small>Grassroots Reach</small>\
+            <strong>416 Sectors</strong>\
+          </div>\
+}
